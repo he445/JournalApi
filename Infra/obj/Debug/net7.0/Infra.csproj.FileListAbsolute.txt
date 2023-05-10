@@ -1,0 +1,12 @@
+C:\Users\Meu Computador\workspace\Api_net6\Journal\Infra\bin\Debug\net7.0\Infra.deps.json
+C:\Users\Meu Computador\workspace\Api_net6\Journal\Infra\bin\Debug\net7.0\Infra.dll
+C:\Users\Meu Computador\workspace\Api_net6\Journal\Infra\bin\Debug\net7.0\Infra.pdb
+C:\Users\Meu Computador\workspace\Api_net6\Journal\Infra\obj\Debug\net7.0\Infra.csproj.AssemblyReference.cache
+C:\Users\Meu Computador\workspace\Api_net6\Journal\Infra\obj\Debug\net7.0\Infra.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Meu Computador\workspace\Api_net6\Journal\Infra\obj\Debug\net7.0\Infra.AssemblyInfoInputs.cache
+C:\Users\Meu Computador\workspace\Api_net6\Journal\Infra\obj\Debug\net7.0\Infra.AssemblyInfo.cs
+C:\Users\Meu Computador\workspace\Api_net6\Journal\Infra\obj\Debug\net7.0\Infra.csproj.CoreCompileInputs.cache
+C:\Users\Meu Computador\workspace\Api_net6\Journal\Infra\obj\Debug\net7.0\Infra.dll
+C:\Users\Meu Computador\workspace\Api_net6\Journal\Infra\obj\Debug\net7.0\refint\Infra.dll
+C:\Users\Meu Computador\workspace\Api_net6\Journal\Infra\obj\Debug\net7.0\Infra.pdb
+C:\Users\Meu Computador\workspace\Api_net6\Journal\Infra\obj\Debug\net7.0\ref\Infra.dll
