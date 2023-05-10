@@ -10,6 +10,6 @@ namespace Domain.Interfaces
 {
     public interface IPost : IGeneric<Post>
     {
-        Task<List<Post>> ListarMessage(Expression<Func<Post, bool>> exMessage);
+
     }
 }
