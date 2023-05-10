@@ -10,3 +10,6 @@ C:\Users\Meu Computador\workspace\Api_net6\Journal\Domain\obj\Debug\net7.0\Domai
 C:\Users\Meu Computador\workspace\Api_net6\Journal\Domain\obj\Debug\net7.0\refint\Domain.dll
 C:\Users\Meu Computador\workspace\Api_net6\Journal\Domain\obj\Debug\net7.0\Domain.pdb
 C:\Users\Meu Computador\workspace\Api_net6\Journal\Domain\obj\Debug\net7.0\ref\Domain.dll
+C:\Users\Meu Computador\workspace\Api_net6\Journal\Domain\bin\Debug\net7.0\Entity.dll
+C:\Users\Meu Computador\workspace\Api_net6\Journal\Domain\bin\Debug\net7.0\Entity.pdb
+C:\Users\Meu Computador\workspace\Api_net6\Journal\Domain\obj\Debug\net7.0\Domain.csproj.CopyComplete

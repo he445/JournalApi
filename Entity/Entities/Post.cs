@@ -5,9 +5,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Entity.Entites;
 
-namespace Entities.Entities
+namespace Entity.Entities
 {
     [Table("TB_POST")]
     public class Post : Notifies

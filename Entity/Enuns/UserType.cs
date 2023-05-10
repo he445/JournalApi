@@ -1,4 +1,4 @@
-namespace Entity.Entites
+namespace Entity.Entities
 {
     public enum UserType
     {

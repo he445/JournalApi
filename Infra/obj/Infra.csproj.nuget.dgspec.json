@@ -4,14 +4,73 @@
     "C:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Infra\\Infra.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Infra\\Infra.csproj": {
+    "C:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Infra\\Infra.csproj",
-        "projectName": "Infra",
-        "projectPath": "C:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Infra\\Infra.csproj",
+        "projectUniqueName": "C:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Domain\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "C:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Meu Computador\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Infra\\obj\\",
+        "outputPath": "C:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Meu Computador\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Entity\\Entity.csproj": {
+                "projectPath": "C:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Entity\\Entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Entity\\Entity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Entity\\Entity.csproj",
+        "projectName": "Entity",
+        "projectPath": "C:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Entity\\Entity.csproj",
+        "packagesPath": "C:\\Users\\Meu Computador\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Entity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Meu Computador\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +98,92 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Infra\\Infra.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Infra\\Infra.csproj",
+        "projectName": "Infra",
+        "projectPath": "C:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Infra\\Infra.csproj",
+        "packagesPath": "C:\\Users\\Meu Computador\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Infra\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Meu Computador\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Domain\\Domain.csproj"
+              },
+              "C:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Entity\\Entity.csproj": {
+                "projectPath": "C:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Entity\\Entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
