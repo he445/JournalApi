@@ -28,8 +28,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Entity\\Entity.csproj": {
-                "projectPath": "C:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Entity\\Entity.csproj"
+              "c:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Entity\\Entity.csproj": {
+                "projectPath": "c:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Entity\\Entity.csproj"
               }
             }
           }
@@ -63,14 +63,14 @@
         }
       }
     },
-    "C:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Entity\\Entity.csproj": {
+    "c:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Entity\\Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Entity\\Entity.csproj",
+        "projectUniqueName": "c:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Entity\\Entity.csproj",
         "projectName": "Entity",
-        "projectPath": "C:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Entity\\Entity.csproj",
+        "projectPath": "c:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Entity\\Entity.csproj",
         "packagesPath": "C:\\Users\\Meu Computador\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Entity\\obj\\",
+        "outputPath": "c:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Entity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Meu Computador\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -155,8 +155,8 @@
               "C:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Domain\\Domain.csproj": {
                 "projectPath": "C:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Domain\\Domain.csproj"
               },
-              "C:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Entity\\Entity.csproj": {
-                "projectPath": "C:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Entity\\Entity.csproj"
+              "c:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Entity\\Entity.csproj": {
+                "projectPath": "c:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Entity\\Entity.csproj"
               }
             }
           }

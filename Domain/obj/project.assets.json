@@ -1871,11 +1871,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Domain\\Domain.csproj",
+      "projectUniqueName": "c:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "C:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Domain\\Domain.csproj",
+      "projectPath": "c:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Domain\\Domain.csproj",
       "packagesPath": "C:\\Users\\Meu Computador\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Domain\\obj\\",
+      "outputPath": "c:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Meu Computador\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1892,8 +1892,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Entity\\Entity.csproj": {
-              "projectPath": "C:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Entity\\Entity.csproj"
+            "c:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Entity\\Entity.csproj": {
+              "projectPath": "c:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Entity\\Entity.csproj"
             }
           }
         }
