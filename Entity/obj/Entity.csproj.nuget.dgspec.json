@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Entity\\Entity.csproj": {}
+    "C:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Entity\\Entity.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Entity\\Entity.csproj": {
+    "C:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Entity\\Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Entity\\Entity.csproj",
+        "projectUniqueName": "C:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Entity\\Entity.csproj",
         "projectName": "Entity",
-        "projectPath": "c:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Entity\\Entity.csproj",
+        "projectPath": "C:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Entity\\Entity.csproj",
         "packagesPath": "C:\\Users\\Meu Computador\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Entity\\obj\\",
+        "outputPath": "C:\\Users\\Meu Computador\\workspace\\Api_net6\\Journal\\Entity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Meu Computador\\AppData\\Roaming\\NuGet\\NuGet.Config",

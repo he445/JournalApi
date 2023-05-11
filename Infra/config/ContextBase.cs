@@ -37,7 +37,7 @@ namespace Infra.config
 
         public string GetStringConection()
         {
-            return "Data Source=DESKTOP-JF5CJ4D\\SERVERS;Initial Catalog=Journal_API;Integrated Security=False;User ID=SERVERS;Password=adm;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False";
+            return "Data Source=DESKTOP-JF5CJ4D\\SERVERS;Initial Catalog=journalDB;Integrated Security=True;";
         }
 
     }
