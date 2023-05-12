@@ -16,41 +16,39 @@ namespace Apis.Controllers
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
-        public UsersController(UserManager<ApplicationUser> userManager,
-            SignInManager<ApplicationUser> signInManager)
+
+        public UsersController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager)
         {
             _userManager = userManager;
             _signInManager = signInManager;
         }
 
-
         [AllowAnonymous]
         [Produces("application/json")]
-        [HttpPost("/api/CriarTokenIdentity")]
-        public async Task<IActionResult> CriarTokenIdentity([FromBody] Login login)
+        [HttpPost("/api/CreateIdentityToken")]
+        public async Task<IActionResult> CreateIdentityToken([FromBody] Login login)
         {
             if (string.IsNullOrWhiteSpace(login.Email) || string.IsNullOrWhiteSpace(login.Password))
             {
                 return Unauthorized();
             }
 
-            var resultado = await
-                _signInManager.PasswordSignInAsync(login.Email, login.Password, false, lockoutOnFailure: false);
+            var result = await _signInManager.PasswordSignInAsync(login.Email, login.Password, false, lockoutOnFailure: false);
 
-            if (resultado.Succeeded)
+            if (result.Succeeded)
             {
-                // Recupera Usuário Logado
+                // Retrieve Logged-in User
                 var userCurrent = await _userManager.FindByEmailAsync(login.Email);
-                var idUsuario = userCurrent.Id;
+                var userId = userCurrent.Id;
 
                 var token = new TokenJWTBuilder()
                     .AddSecurityKey(JwtSecurityKey.Create("Secret_Key-12345678"))
-                .AddSubject("Empresa - Canal Dev Net Core")
-                .AddIssuer("Teste.Securiry.Bearer")
-                .AddAudience("Teste.Securiry.Bearer")
-                .AddClaim("idUsuario", idUsuario)
-                .AddExpiry(5)
-                .Builder();
+                    .AddSubject("Company - Everton inc")
+                    .AddIssuer("Test.Securiry.Bearer")
+                    .AddAudience("Test.Securiry.Bearer")
+                    .AddClaim("userId", userId)
+                    .AddExpiry(5)
+                    .Builder();
 
                 return Ok(token.value);
             }
@@ -58,51 +56,50 @@ namespace Apis.Controllers
             {
                 return Unauthorized();
             }
-
-
         }
-
 
         [AllowAnonymous]
         [Produces("application/json")]
-        [HttpPost("/api/AdicionaUsuarioIdentity")]
-        public async Task<IActionResult> AdicionaUsuarioIdentity([FromBody] Login login)
+        [HttpPost("/api/AddIdentityUser")]
+        public async Task<IActionResult> AddIdentityUser([FromBody] Login login)
         {
             if (string.IsNullOrWhiteSpace(login.Email) || string.IsNullOrWhiteSpace(login.Password))
-                return Ok("Falta alguns dados");
-
+            {
+                return Ok("Missing some data");
+            }
 
             var user = new ApplicationUser
             {
-                UserName = login.Name,
+                Name = login.Name,
                 Email = login.Email,
                 Type = UserType.Common,
+                UserName = login.Email
             };
 
-            var resultado = await _userManager.CreateAsync(user, login.Password);
+            var result = await _userManager.CreateAsync(user, login.Password);
 
-            if (resultado.Errors.Any())
+            if (result.Errors.Any())
             {
-                return Ok(resultado.Errors);
+                return Ok(result.Errors);
             }
 
-
-            // Geração de Confirmação caso precise
+            // Generate confirmation code if needed
             var userId = await _userManager.GetUserIdAsync(user);
             var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
             code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
 
-            // retorno Email 
+            // Return email
             code = Encoding.UTF8.GetString(WebEncoders.Base64UrlDecode(code));
-            var resultado2 = await _userManager.ConfirmEmailAsync(user, code);
+            var result2 = await _userManager.ConfirmEmailAsync(user, code);
 
-            if (resultado2.Succeeded)
-                return Ok("Usuário Adicionado com Sucesso");
+            if (result2.Succeeded)
+            {
+                return Ok("User Added Successfully");
+            }
             else
-                return Ok("Erro ao confirmar usuários");
-
+            {
+                return Ok("Error confirming user");
+            }
         }
     }
-
-
 }

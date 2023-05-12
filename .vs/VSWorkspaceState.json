@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Apis"
   ],
-  "SelectedNode": "\\Journal.sln",
+  "SelectedNode": "\\Apis\\appsettings.json",
   "PreviewInSolutionExplorer": false
 }
