@@ -35,7 +35,7 @@ builder.Services.AddRazorPages();
 builder.Services.AddSingleton(typeof(IGeneric<>), typeof(RepositoryGenerics<>));
 builder.Services.AddSingleton<IPost, RepositoryPost>();
 
-builder.Services.AddSingleton<InterfaceServices, ServicePost>();
+builder.Services.AddSingleton<InterfaceServices, PostService>();
 
 // JWT
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)

@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -19,6 +20,14 @@ namespace Infrastructure.Repository.Repositories
         public RepositoryPost()
         {
             _OptionsBuilder = new DbContextOptions<ContextBase>();
+
+        }
+        public async Task<List<Post>> GetPosts(Expression<Func<Post, bool>> exMessage)
+        {
+            using (var Db = new ContextBase(_OptionsBuilder))
+            {
+                return await Db.Posts.Where(exMessage).AsNoTracking().ToListAsync();
+            }
         }
 
 
